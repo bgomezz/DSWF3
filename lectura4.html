@@ -70,26 +70,77 @@
       </ul>
     </div>
 
-<div class="contenido_multimedia">
+<div class="contenido_actividad_1_2">
 
 <div class="columna_inicio">
 <div class="card"> 
   <div class="container">
-     <p class="titulos"><b>Qué es el HTML y el CSS</b></p>
-     
+    <p class="titulos"><b>Etiqueta display de CSS3</b></p>
+
              <p>  <br>
 
+<b>CSS Layout - display: inline-block</b><br><br>
 
 
-
+El display: inline-block Value En comparación con <b class="color_codigo">display: inline</b>, la principal diferencia es que <b class="color_codigo">display: inline-block </b>permite establecer un ancho y alto en el elemento.<br><br>
+Además, con  <b class="color_codigo">display: inline-block</b>, se respetan los márgenes / rellenos superiores e inferiores, pero con  <b class="color_codigo">display: inline </b>no se logra esto.<br><br>
+En comparación con  <b class="color_codigo">display: block</b>, la principal diferencia es que  <b class="color_codigo">display: inline-block</b> no agrega un salto de línea después del elemento, por lo que el elemento puede agregarse junto a otros elementos.<br><br>
+El siguiente ejemplo muestra el diferente comportamiento de  <b class="color_codigo">display: inline, display: inline-block y display: block:</b><br>
 
 <br>
-<center>
-  <iframe width="760" height="415" src="https://www.youtube.com/embed/FWYElWxlW0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<b>Ejemplo:</b><br><br>
+<b class="color_codigo">
+span.a {<br>
+  display: inline; /* the default for span */<br>
+  width: 100px;<br>
+  height: 100px;<br>
+  padding: 5px;<br>
+  border: 1px solid blue;<br>
+  background-color: yellow;<br>
+}<br><br>
 
-<br>
-Perálvarez, D. [David Perálvarez]. (2015, octubre 28). Que es HTML y el CSS. [Archivo de vídeo]. Recuperado de https://www.youtube.com/watch?v=FWYElWxlW0c&list=PL2gyyaD6L_1Cu507nz9u6RpnaiTMj4W55
-<br>
+span.b {<br>
+  display: inline-block;<br>
+  width: 100px;<br>
+  height: 100px;<br>
+  padding: 5px;<br>
+  border: 1px solid blue;<br>
+  background-color: yellow;<br>
+}<br><br>
+
+span.c {<br>
+  display: block;<br>
+  width: 100px;<br>
+  height: 100px;<br>
+  padding: 5px;<br>
+  border: 1px solid blue;<br>
+  background-color: yellow;<br>
+}<br>
+</b>
+
+
+Usar inline-block para crear enlaces de navegación<br><br>
+Un uso común para display: inline-block es mostrar elementos de la lista horizontalmente en lugar de verticalmente. El siguiente ejemplo crea enlaces de navegación horizontal:<br>
+
+Ejemplo<br><b class="color_codigo">
+.nav {<br>
+  background-color: yellow;<br>
+  list-style-type: none;<br>
+  text-align: center; <br>
+  padding: 0;<br>
+  margin: 0;<br>
+}<br><br>
+
+.nav li {<br>
+  display: inline-block;<br>
+  font-size: 20px;<br>
+  padding: 20px;<br><br>
+}<br></b>
+
+W3schools.com. CSS Layout - display: inline-block. Recuperado de https://w css/css_inline-block.asp ww.w3schools.com/ 
+
+
+
 
 
 

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Definición del lenguaje a utilizar en este caso español es -->
+    <head lang="es">
+    	<!--Se indica la codificación de caracteres utilizada -->
+		<meta charset="UTF-8">
+		<meta content="Beatriz Gómez" name="author"/>
+ 		<meta content="Objeto Virtual de Aprendizaje OVA - UNAD" name="description" />
+    <!--Definición de palabras clave que ayudaran en la busqueda de la web -->
+ 		<meta content=" Unad, Ova, Fase3, Diseño, Plantillas," name="keywords"/>
+ 		<title>Objeto Virtual de Aprendizaje OVA</title> 
+ 		<!-- Definición de scripts y librerías de apoyo	 --> 	
+ 			<link rel="stylesheet" href="css/style_fase3.css">
+    </head>
+
+
+ <body>
+        	  
+		  		
+<header class="encabezado">
+        <!--  Imagen horizontal de acuerdo a la página 22 del manual de imagen de  la UNAD -->
+    <img src="img/logo_horizontal_UNAD.png" class="banner_derecha"/>			
+      <div class="titulo-principal h2">OBJETO VIRTUAL DE APRENDIZAJE PARA DISEÑO DE SITIOS WEB</div>
+     
+      <div  class="banner_izquierda">
+
+          <img src="img/logo_colombia.png" class="logo_col"/>	
+          </div>
+    
+
+
+
+
+ </header>
+<div id="menu_basico" class="menu_basico">
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Lecturas</a>
+          <ul>
+            <li><a href="lectura1.html">Listas HTML</a></li>
+            <li><a href="lectura2.html">Selectores en CSS</a></li>
+            <li><a href="lectura3.html">Diseño Responsive CSS3</a></li>
+            <li><a href="lectura4.html">Etiqueta display de CSS3</a></li>
+            <li><a href="lectura5.html">Diseño CSS3: alineación horizontal y vertical</a></li>          
+         
+              
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Multimedia</a>
+          <ul>
+            <li><a href="multimedia1.html">CSS Inline, Interno y Externo</a></li>
+            <li><a href="multimedia2.html">Que es HTML y el CS</a></li>
+            
+          </ul>
+        </li>
+         <li><a href="#">Actividades</a>
+          <ul>
+            <li><a href="actividad1.html">Crucigrama</a></li>
+            <li><a href="actividad2.html">Sopa de letras</a></li>
+            <li><a href="actividad3.html">Relación de frases</a></li>
+            
+          </ul>
+        </li>
+          <li><a href="autores.html">Autores</a>
+            
+          </li>
+      
+      </ul>
+    </div>
+
+<div class="contenido_lectura1">
+
+<div class="columna_inicio">
+<div class="card"> 
+  <div class="container">
+    <p class="titulos"><b>Listas HTML</b></p>
+
+             <p>  <br>
+
+
+
+
+
+<code>
+
+  <b>Listas no ordenadas:</b> <b class="text_blue">&lt;ul&gt;</b><br> <br> 
+Estas listas no ordenadas se construyen con la etiqueta HTML <b class="text_blue">&lt;ul&gt;</b> cerrando respectivamente la etiqueta con <b class="text_blue">&lt;/ul&gt;</b> se usa para organizar listas con puntos, así que para cada punto que desee añadir a la lista, debe colocarlo entre la etiqueta <b class="text_blue">&lt;li&gt;</b>. Es decir, <b class="text_blue">&lt;li&gt;</b> Objeto de la lista<b class="text_blue">&lt;/li&gt;</b> de esta manera se crea la lista con un punto negro, pero si deseas utilizar otros símbolos, lo puedes hacer a través del atributo “type”.<br> <br> 
+Para usar el atributo de la etiqueta <b class="text_blue">&lt;li&gt;</b> se hace de la siguiente manera:<br> 
+<b class="text_blue">&lt;ul&gt;</b><br> 
+<b class="text_blue">&lt;li type= “disc”&gt;</b> dibuja un punto un punto negro <b class="text_blue">&lt;/li&gt;</b><br> 
+ <b class="text_blue">&lt;li type= “circle”&gt;</b> dibuja un punto sin relleno y contorno negro. <b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;li type= “square”&gt;</b> dibuja un cuadro. <b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;/ul&gt;</b><br> <br> 
+
+<b>Listas ordenadas: </b><b class="text_blue">&lt;ol&gt;</b><br> <br> 
+Para enumerar listas de manera organizada, se utiliza la etiqueta HTML <b class="text_blue">&lt;ol&gt;</b>, se coloca cada elemento de la lista entre las etiquetas <b class="text_blue">&lt;li&gt;</b>Objeto de la lista<b class="text_blue">&lt;/li&gt;</b> en la medida en que vaya agregando cada uno de los ítems que desea organizar, esta etiqueta los va a enumerar automáticamente, pero si quiere definir a partir de qué número debe empezar a organizar, se usa la propiedad value, se realiza de la siguiente manera:<br> 
+<b class="text_blue">&lt;ol&gt;</b><br> 
+<b class="text_blue">&lt;li value= “8”&gt;</b> Primer ítem que enumera iniciando en 8 <b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;li&gt;</b> Enumera el siguiente ítem automáticamente, sería 9 <b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;li&gt;</b> Luego sigue el ítem número 10. Y Así sucesivamente <b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;/ol&gt;</b><br> <br> 
+
+<b>Listas de definiciones:</b> <b class="text_blue">&lt;dl&gt;</b>, <b class="text_blue">&lt;dt&gt;</b> y <b class="text_blue">&lt;dd&gt;</b><br> 
+Se utilizan para hacer un listado de definiciones, la etiqueta dl viene de los términos en inglés “Definiton list”, que indica dentro de ella, en ella y su cierre, va a ir una definición.<br> 
+En el caso de la etiqueta dt viene de los términos “Definition term”, dentro de ella irá el término que vamos a definir, es decir, dentro de <b class="text_blue">&lt;dt&gt;</b> se escribe el título de la definición.<br> 
+Y la etiqueta <b class="text_blue">&lt;dd&gt;</b> viene de los términos “Definition description” dentro de ella irá la definición.
+Si escribe varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación.
+Aquí podemos ver un ejemplo de código de dos listados de definición:<br> <br> 
+<b class="text_blue">&lt;dl&gt;</b><br> 
+<b class="text_blue">&lt;dt&gt;</b>Aquí va el término a definir<b class="text_blue">&lt;/dt&gt;</b><br> 
+<b class="text_blue">&lt;dd&gt;</b>Aquí defines el término<b class="text_blue">&lt;/dd&gt;</b><br> 
+<b class="text_blue">&lt;/dl&gt;</b><br> 
+<b class="text_blue">&lt;dl&gt;</b><br> 
+<b class="text_blue">&lt;dt&gt;</b>El siguiente término que se va a definir<b class="text_blue">&lt;/dt&gt;</b><br> 
+<b class="text_blue">&lt;dd&gt;</b>Aquí va la segunda definición, separada automáticamente de la anterior<b class="text_blue">&lt;/dd&gt;</b><br> 
+<b class="text_blue">&lt;/dl&gt;</b><br> 
+Hazunaweb. Listas HTML. Recuperado de
+https://www.hazunaweb.com/curso-de-html/listas/<br> <br> 
+
+<b>El elemento de sección de navegación</b> <b class="text_blue">&lt;nav&gt;</b><br> 
+
+El elemento <b class="text_blue">&lt;nav&gt;</b> HTML se utiliza para representar secciones de las páginas, proporcionando enlaces de navegación dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.<br> 
+No es necesario que todos los enlaces estén contenidos en un elemento <b class="text_blue">&lt;nav&gt;</b>contenido<b class="text_blue">&lt;/nav&gt;</b> está destinada sólo para el bloque principal de enlaces de navegación; por ejemplo, el elemento <b class="text_blue">&lt;footer&gt;</b> a menudo tiene una lista de enlaces que no necesitan estar en un elemento <b class="text_blue">&lt;nav&gt;</b>.<br> 
+<br> 
+Ejemplo<br> 
+En este ejemplo un <b class="text_blue">&lt;nav&gt;</b> bloque se usa para contener una lista desordenada ( <b class="text_blue">&lt;ul&gt;</b>) de enlaces. Con el CSS apropiado, esto se puede presentar como una barra lateral, barra de navegación o menú desplegable.
+<br> 
+<b class="text_blue">&lt;nav class="menu"&gt;</b><br> 
+<b class="text_blue">&lt;ul&gt;</b><br> 
+<b class="text_blue">&lt;li&gt;</b><b class="text_blue">&lt;a href="#"&gt;</b>Inicio<b class="text_blue">&lt;/a&gt;</b><b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;li&gt;</b><b class="text_blue">&lt;a href="#"&gt;</b>Lecturas<b class="text_blue">&lt;/a&gt;</b><b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;li&gt;</b><b class="text_blue">&lt;a href="#"&gt;</b>Multimedia<b class="text_blue">&lt;/a&gt;</b><b class="text_blue">&lt;/li&gt;</b><br> 
+<b class="text_blue">&lt;/ul&gt;</b><br> 
+<b class="text_blue">&lt;/nav&gt;</b><br> 
+
+MDN Web docs. (2019, julio 20). <b class="text_blue">&lt;nav&gt;</b>: El elemento de sección de navegación. Recuperado de https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav
+<br> <br> 
+<b>Compatibilidad del navegador</b>
+
+     <center>  <img src="img/lectura1_img1.png" class="imagen1_lectura1"/>  </center><br>
+MDN web docs &lt;nav&gt; : Compatibilidad del navegador. [Tabla]. Recuperado de https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav
+<br><br>
+<b>Secciones HTML</b><br>
+ <center>  <img src="img/lectura1_img2.png" class="imagen1_lectura1"/>  </center><br>
+MDN Web docs. (2020, enero 21). Secciones. [Tabla]. Recuperado de  https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos
+
+
+
+
+
+
+
+
+
+              <br><br><br><br></p>
+
+              </div> 
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  
+    <br>
+
+<div class="pie_de_pagina">
+<br>
+
+
+  <div class="col_footer">
+    <br>
+      <center>  <img src="img/ubicacion.png" class="ubicacion_footer"/>  </center>
+<center>Ubicación: Bogotá D.C. (Colombia) <br>
+Tel: (+57)(1)375 9500  <br>
+Línea gratuita nacional: 01 8000 115223<br></center>
+  </div> 
+
+
+  <div class="col_footer">
+
+   <center> 
+
+
+<a class="twitter-timeline" data-lang="es" data-width="300" data-height="200" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+</center>
+
+  </div>
+<br>
+<br><br>
+<br>
+
+  <div class="copyright">
+  &copy; <i>2020 Desarrollado por Beatriz Gómez Zabala</i>
+  </div> 
+
+
+
+
+
+        </body>
+
+
+
+</html>

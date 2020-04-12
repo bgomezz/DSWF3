@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Definición del lenguaje a utilizar en este caso español es -->
+    <head lang="es">
+    	<!--Se indica la codificación de caracteres utilizada -->
+		<meta charset="UTF-8">
+		<meta content="Beatriz Gómez" name="author"/>
+ 		<meta content="Objeto Virtual de Aprendizaje OVA - UNAD" name="description" />
+    <!--Definición de palabras clave que ayudaran en la busqueda de la web -->
+ 		<meta content=" Unad, Ova, Fase3, Diseño, Plantillas," name="keywords"/>
+ 		<title>Objeto Virtual de Aprendizaje OVA</title> 
+ 		<!-- Definición de scripts y librerías de apoyo	 --> 	
+ 			<link rel="stylesheet" href="css/style_fase3.css">
+    </head>
+
+
+ <body>
+        	  
+		  		
+<header class="encabezado">
+        <!--  Imagen horizontal de acuerdo a la página 22 del manual de imagen de  la UNAD -->
+    <img src="img/logo_horizontal_UNAD.png" class="banner_derecha"/>			
+      <div class="titulo-principal h2">OBJETO VIRTUAL DE APRENDIZAJE PARA DISEÑO DE SITIOS WEB</div>
+     
+      <div  class="banner_izquierda">
+
+          <img src="img/logo_colombia.png" class="logo_col"/>	
+          </div>
+    
+
+
+
+
+ </header>
+<div id="menu_basico" class="menu_basico">
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Lecturas</a>
+          <ul>
+            <li><a href="lectura1.html">Listas HTML</a></li>
+            <li><a href="lectura2.html">Selectores en CSS</a></li>
+            <li><a href="lectura3.html">Diseño Responsive CSS3</a></li>
+            <li><a href="lectura4.html">Etiqueta display de CSS3</a></li>
+            <li><a href="lectura5.html">Diseño CSS3: alineación horizontal y vertical</a></li>          
+         
+              
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Multimedia</a>
+          <ul>
+            <li><a href="multimedia1.html">CSS Inline, Interno y Externo</a></li>
+            <li><a href="multimedia2.html">Que es HTML y el CS</a></li>
+            
+          </ul>
+        </li>
+         <li><a href="#">Actividades</a>
+          <ul>
+            <li><a href="actividad1.html">Crucigrama</a></li>
+            <li><a href="actividad2.html">Sopa de letras</a></li>
+            <li><a href="actividad3.html">Relación de frases</a></li>
+            
+          </ul>
+        </li>
+          <li><a href="autores.html">Autores</a>
+            
+          </li>
+      
+      </ul>
+    </div>
+
+<div class="contenido_lectura5">
+
+<div class="columna_inicio">
+<div class="card"> 
+  <div class="container">
+    <p class="titulos"><b>Diseño CSS3: alineación horizontal y vertical</b></p>
+
+             <p>  <br>
+
+
+
+
+
+<strong>Elementos de alineación central</strong><br>
+Para centrar horizontalmente un elemento de bloque (como &lt;div&gt;), use margin: auto;<br>
+Establecer el ancho del elemento evitará que se extienda hasta los bordes de su contenedor.<br>
+El elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales.<br> 
+
+<br>
+<strong>Ejemplo</strong><br><b class="color_codigo">
+.center {<br>
+  margin: auto;<br>
+  width: 50%;<br>
+  border: 3px solid green;<br>
+  padding: 10px;<br>
+}<br></b>
+<strong>Nota: </strong>La alineación central no tiene efecto si la propiedad width no está establecida (o establecida en 100%).<br>
+<strong>Texto de alineación central</strong><br>
+Para centrar el texto dentro de un elemento, use text-align: center;<br>
+<strong>Nota:</strong> La alineación central no tiene efecto si la width propiedad no está establecida (o establecida en 100%).<br>
+<strong>Ejemplo</strong><br>
+<b class="color_codigo">.center {<br>
+  text-align: center;<br>
+  border: 3px solid green;<br>
+}<br><br></b>
+
+<strong>Centrar una imagen</strong><br>
+Para centrar una imagen, establezca el margen izquierdo y derecho en auto y conviértala en un elemento block:<br>
+
+<br>
+<center><img src="img/lectura5_imagen1.jpg" /> </center>
+<br>
+W3schools.com. Diseño CSS: alineación horizontal y vertical. [Figura]. Recuperado de
+https://www.w3schools.com/css/paris.jpg<br>
+
+<strong>Ejemplo</strong><br>
+<b class="color_codigo">img {<br>
+  display: block;<br>
+  margin-left: auto;<br>
+  margin-right: auto;<br>
+  width: 40%;<br>
+}<br></b>
+
+<strong>Alineación izquierda y derecha: posición de uso</strong><br>
+Un método para alinear elementos es usar position: absolute; :<br>
+<strong>Ejemplo</strong><br><b class="color_codigo">
+<b class="color_codigo">.right {<br>
+  position: absolute;<br>
+  right: 0px;<br>
+  width: 300px;<br>
+  border: 3px solid #73AD21;<br>
+  padding: 10px;<br>
+}<br></b></b>
+<strong>Nota:</strong> Los elementos posicionados como absolutos se eliminan del flujo normal y pueden superponerse a los elementos.<br>
+
+<strong>Alineación izquierda y derecha: uso de flotación</strong><br>
+Otro método para alinear elementos es usar la float propiedad: <br>
+Ejemplo<br><b class="color_codigo">
+.right {<br>
+  float: right;<br>
+  width: 300px;<br>
+  border: 3px solid #73AD21;<br>
+  padding: 10px;<br>
+}<br></b>
+Nota: Si le llegase a ocurrir que un elemento es más alto que el elemento que lo contiene y flota, este se desbordará fuera de su contenedor, por lo que se puede corregir con el truco " clearfix " y agregar entre corches overflow: auto; al elemento contenedor.
+<br>
+<strong>Ejemplo</strong><br>
+.clearfix {<br><b class="color_codigo">
+  overflow: auto;<br>
+}<br></b>
+Centrar verticalmente: uso de relleno<br>
+Hay muchas formas de centrar un elemento verticalmente en CSS. Una solución simple es usar arriba y abajo padding:<br>
+Ejemplo<br><b class="color_codigo">
+.center {<br>
+  padding: 70px 0;<br>
+  border: 3px solid green;<br>
+}<br></b>
+Para centrar tanto vertical como horizontalmente, use padding y text-align: center;<br><br>
+<strong>Ejemplo</strong><br>
+.center {<br><b class="color_codigo">
+  padding: 70px 0;<br>
+  border: 3px solid green;<br>
+  text-align: center;<br>
+}<br></b>
+<br>
+Centrar verticalmente: usar altura de línea<br>
+Otro truco es usar la line-height propiedad con un valor que sea igual a propiedad height<br> 
+Centrar verticalmente: usar posición y transformación<br>
+Si padding y line-height no son opciones, otra solución es utilizar la position y la propiedad   transform:<br>
+Ejemplo<br><b class="color_codigo">
+.center {<br>
+  height: 200px;<br>
+  position: relative;<br>
+  border: 3px solid green;<br>
+}<br></b>
+<br><b class="color_codigo">
+.center p {<br>
+  margin: 0;<br>
+  position: absolute;<br>
+  top: 50%;<br>
+  left: 50%;<br>
+  transform: translate(-50%, -50%);<br>
+}<br></b>
+
+Centrar verticalmente: uso de Flexbox<br>
+También puede usar flexbox para centrar las cosas. Solo tenga en cuenta que flexbox no es compatible con IE10 y versiones anteriores:<br>
+<strong>Ejemplo</strong><br><b class="color_codigo">
+.center {<br>
+  display: flex;<br>
+  justify-content: center;<br>
+  align-items: center;<br>
+  height: 200px;<br>
+  border: 3px solid green;<br>
+}<br><br></b>
+W3schools.com. Diseño CSS: alineación horizontal y vertical. Recuperado de: https://www.w3schools.com/css/css_align.asp
+
+
+
+
+
+
+
+              <br><br><br><br></p>
+
+              </div> 
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  
+    <br>
+
+<div class="pie_de_pagina">
+<br>
+
+
+  <div class="col_footer">
+    <br>
+      <center>  <img src="img/ubicacion.png" class="ubicacion_footer"/>  </center>
+<center>Ubicación: Bogotá D.C. (Colombia) <br>
+Tel: (+57)(1)375 9500  <br>
+Línea gratuita nacional: 01 8000 115223<br></center>
+  </div> 
+
+
+  <div class="col_footer">
+
+   <center> 
+
+
+<a class="twitter-timeline" data-lang="es" data-width="300" data-height="200" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+</center>
+
+  </div>
+<br>
+<br><br>
+<br>
+
+  <div class="copyright">
+  &copy; <i>2020 Desarrollado por Beatriz Gómez Zabala</i>
+  </div> 
+
+
+
+
+
+        </body>
+
+
+
+</html>

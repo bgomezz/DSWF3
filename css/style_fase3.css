@@ -188,7 +188,14 @@ text-align: justify;
 .contenido_lectura1
 {
 
-height: 875px;
+height: 2175px;
+text-align: justify;
+
+}
+.contenido_lectura5
+{
+
+height: 2475px;
 text-align: justify;
 
 }
@@ -269,4 +276,20 @@ strong, b {
 .imagen_autora
 {
   height:120px;
+}
+
+.text_blue
+{
+  color:#005883;
+  font-size: 17px;
+}
+.imagen1_lectura1
+{
+
+  width: 600px;
+}
+
+.color_codigo
+{
+  color:#005883;
 }

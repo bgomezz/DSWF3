@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Definición del lenguaje a utilizar en este caso español es -->
+    <head lang="es">
+    	<!--Se indica la codificación de caracteres utilizada -->
+		<meta charset="UTF-8">
+		<meta content="Beatriz Gómez" name="author"/>
+ 		<meta content="Objeto Virtual de Aprendizaje OVA - UNAD" name="description" />
+    <!--Definición de palabras clave que ayudaran en la busqueda de la web -->
+ 		<meta content=" Unad, Ova, Fase3, Diseño, Plantillas," name="keywords"/>
+ 		<title>Objeto Virtual de Aprendizaje OVA</title> 
+ 		<!-- Definición de scripts y librerías de apoyo	 --> 	
+ 			<link rel="stylesheet" href="css/style_fase3.css">
+    </head>
+
+
+ <body>
+        	  
+		  		
+<header class="encabezado">
+        <!--  Imagen horizontal de acuerdo a la página 22 del manual de imagen de  la UNAD -->
+    <img src="img/logo_horizontal_UNAD.png" class="banner_derecha"/>			
+      <div class="titulo-principal h2">OBJETO VIRTUAL DE APRENDIZAJE PARA DISEÑO DE SITIOS WEB</div>
+     
+      <div  class="banner_izquierda">
+
+          <img src="img/logo_colombia.png" class="logo_col"/>	
+          </div>
+    
+
+
+
+
+ </header>
+<div id="menu_basico" class="menu_basico">
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Lecturas</a>
+          <ul>
+            <li><a href="lectura1.html">Listas HTML</a></li>
+            <li><a href="lectura2.html">Selectores en CSS</a></li>
+            <li><a href="lectura3.html">Diseño Responsive CSS3</a></li>
+            <li><a href="lectura4.html">Etiqueta display de CSS3</a></li>
+            <li><a href="lectura5.html">Diseño CSS3: alineación horizontal y vertical</a></li>          
+         
+              
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Multimedia</a>
+          <ul>
+            <li><a href="multimedia1.html">CSS Inline, Interno y Externo</a></li>
+            <li><a href="multimedia2.html">Que es HTML y el CS</a></li>
+            
+          </ul>
+        </li>
+         <li><a href="#">Actividades</a>
+          <ul>
+            <li><a href="actividad1.html">Crucigrama</a></li>
+            <li><a href="actividad2.html">Sopa de letras</a></li>
+            <li><a href="actividad3.html">Relación de frases</a></li>
+            
+          </ul>
+        </li>
+          <li><a href="autores.html">Autores</a>
+            
+          </li>
+      
+      </ul>
+    </div>
+
+<div class="contenido_lectura1">
+
+<div class="columna_inicio">
+<div class="card"> 
+  <div class="container">
+    <p class="titulos"><b>Selectores en CSS</b></p>
+
+             <p>  <br>
+
+
+
+
+
+<code>
+
+  Los selectores se usan para darle un estilo especifico a cada selector, en el lenguaje de CSS, toda línea es una regla, por ejemplo, <strong>strong</strong>, que es un selector, permite a que elementos en el DOM se le aplica esta regla.  <br>  <br>
+
+
+<center>  <img src="img/lectura2_img1.png" />  </center>
+  Con respecto al código anterior, la parte interior de las llaves es la declaración, la palabra clave es color, que es una propiedad, el rojo es el valor y el punto y coma despúes de definir el par propiedad-valor, separar los posibles otros pares propiedad-valor en una misma declaración.  <br>  <br>
+
+Como se puede dar cuenta se da valores los atributos de los selectores. Esto permite que sus reglas sean más específicas.  <br>  <br>
+
+Dos atributos tienen un estatus especial para CSS. Son class e id.  <br>  <br>
+
+
+
+
+
+
+<strong>Class: Selectores de clase</strong>  <br><br>
+
+El atributo class  se utiliza para asignarle  a un elemento un nombre de clase (class). Depende del nombre que elijas como class. Múltiples elementos en un documento pueden tener el mismo valor de la clase.  <br>
+En su hoja de estilo, escriba un punto (.) antes del nombre de la clase, cuando desee utilizar un selector.  <br>
+<br>
+<strong>Selectores ID  </strong><br><br>
+
+Utilice el atributo id en un elemento para asignar una identificación para ese elemento. Depende del nombre que elija para el ID. El nombre de ID debe ser único en el documento.  <br>
+ 
+En su hoja de estilo, escriba el símbolo de almohadilla (#) antes del ID cuando se utiliza esto en un selector.  <br>
+
+Ejemplo  <br>
+El siguiente ejemplo usa una etiqueta HTML que tiene un atributo class y un atributo id:  <br><br>
+
+<b class="text_blue">&lt;p class="key" id="principal"&gt;</b><br><br>
+
+El valor de id es, principal, debe ser único en el documento; pero otras etiquetas del documento pueden tener el mismo nombre de la clase Key.<br>
+
+En una hoja de estilo CSS, la siguiente regla hace que todos los elementos de la clase key sean verdes.<br>
+
+<center>  <img src="img/lectura2_img2.png" />  </center>
+
+Esta regla hace que el único elemento de id principal este en negrita:<br><br>
+<center>  <img src="img/lectura2_img3.png" />  </center>
+
+
+Si más de una regla se aplica a un elemento y especifica la misma propiedad, entonces el CSS da prioridad a la regla que tiene el selector más específico. Un selector ID es más específico que un selector de class, que a su vez es más específico que un selector (tag) de etiquetas.<br><br>
+
+Cuando tenga un problema con las reglas en conflicto, trate de resolverlo haciendo una de las normas más específica, para que tenga prioridad. Si no puede hacerlo, entonces trate de mover una de las reglas más cerca del final de la hoja de estilos, para que tenga prioridad.<br><br>
+
+  
+Las pseudo-clases de los selectores<br>
+
+Una pseudo-clase  o pseudo-class es en  CSS una palabra clave añadida a los selectores, que epecifica un estado especial del elemento a seleccionar. Por ejemplo {{Css Href (": hover")}} aplicará un estilo cuando el usuario se desplaza sobre el elemento especificado mediante el selector.<br><br>
+
+Las Pseudo-classes, junto con los pseudo-elements, permiten un estilo a un elemento no sólo en relación con el contenido de la estructura del documento, sino también en relación a los factores externos, como la historia del navegador, por ejemplo: ({{href css (": visited ")}},), el estado de su contenido como {{ref css (": :checked")}} en algunos elementos del formulario, o la posición del ratón {{cssxref (":hover ")}}, que le permite saber si el ratón está sobre un elemento o para ver una lista completa de selectores, visite especificación CSS3 permite saber si el ratón está sobre un elemento o no.<br><br>
+
+<strong>Sintaxis</strong><br>
+<center>  <img src="img/lectura2_img3.png" />  </center>
+
+Listado de pseudo-classes:<br>
+<ul>
+<li>• :link</li>
+<li>• :visited</li>
+<li>• :active</li>
+<li>• :hover</li>
+<li>• :focus
+<li>• :first-child</li>
+<li>• :last-child</li>
+<li>• :nth-child</li>
+<li>• :nth-last-child</li>
+<li>• :nth-of-type</li>
+<li>• :first-of-type</li>
+<li>• :last-of-type</li>
+<li>• :empty</li>
+<li>• :target</li>
+<li>• :checked</li>
+<li>• :enabled</li>
+<li>• :disabled</li>
+</ul>
+<br>
+
+Colaboradores de MDN. MDN web docs. (última actualización 2019, marzo 23). Selectores. Recuperado de https://developer.mozilla.org/es/docs/Web/CSS/Introducci%C3%B3n/Selectors
+
+
+
+
+
+
+
+
+
+              <br><br><br><br></p>
+
+              </div> 
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  
+    <br>
+
+<div class="pie_de_pagina">
+<br>
+
+
+  <div class="col_footer">
+    <br>
+      <center>  <img src="img/ubicacion.png" class="ubicacion_footer"/>  </center>
+<center>Ubicación: Bogotá D.C. (Colombia) <br>
+Tel: (+57)(1)375 9500  <br>
+Línea gratuita nacional: 01 8000 115223<br></center>
+  </div> 
+
+
+  <div class="col_footer">
+
+   <center> 
+
+
+<a class="twitter-timeline" data-lang="es" data-width="300" data-height="200" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+</center>
+
+  </div>
+<br>
+<br><br>
+<br>
+
+  <div class="copyright">
+  &copy; <i>2020 Desarrollado por Beatriz Gómez Zabala</i>
+  </div> 
+
+
+
+
+
+        </body>
+
+
+
+</html>
