@@ -1,0 +1,34 @@
+body{
+    background-color: chartreuse;
+    color:white;
+}
+nav,header, .contenedor,footer{
+    max-width: 94%;
+    margin: auto;
+}
+
+nav{
+    background-color:gray;
+}
+header{
+background-color:black;    
+}
+.contenedor{
+    background-color: greenyellow;
+}
+.articulos{
+    background-color: honeydew;
+    color:black;
+    display: inline-block;
+    max-width: 67%;
+}
+
+aside{
+background-color: brown;
+display: inline-block;
+max-width: 29%;
+}
+footer{
+background-color: blue;
+
+}
